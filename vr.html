@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:200,300,400,500,600,700,800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/animate.css">
+  <link rel="stylesheet" href="css/owl.carousel.min.css">
+  <link rel="stylesheet" href="css/owl.theme.default.min.css">
+  <link rel="stylesheet" href="css/magnific-popup.css">
+  <link rel="stylesheet" href="css/bootstrap-datepicker.css">
+  <link rel="stylesheet" href="css/jquery.timepicker.css">
+  <link rel="stylesheet" href="css/flaticon.css">
+  <link rel="icon" href="images/logo.png" type="image/x-icon">
+  <link rel="stylesheet" href="css/style.css">
+
+  <title>Volunteer Registration</title>
+</head>
+<body>
+  <section class="ftco-appointment ftco-section ftco-no-pt ftco-no-pb img" id="volunteer" style="background-color:rgb(150, 177, 186);">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-8">
+          <div class="wrap-about py-5">
+            <div class="heading-section pr-md-5 pt-md-5"> 
+              <span class="subheading">Join Our Team</span>
+              <h2 class="mb-4" style="color: darkblue;">Volunteer Registration</h2>
+            </div>
+            <form action="vr.php" method="post" class="appointment">
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="form-group">
+                    <label for="full_name">Full Name</label>
+                    <div class="input-wrap">
+                      <div class="icon"><span class="fa fa-user"></span></div>
+                      <input type="text" class="form-control" name="full_name" required>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-12">
+                  <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <div class="input-wrap">
+                      <div class="icon"><span class="fa fa-envelope-o"></span></div>
+                      <input type="email" class="form-control" name="email" required>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-12">
+                  <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <div class="input-wrap">
+                      <div class="icon"><span class="fa fa-phone"></span></div>
+                      <input type="tel" class="form-control" name="phone" required>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-12">
+                  <div class="form-group">
+                    <label for="address">Address (Optional)</label>
+                    <div class="input-wrap">
+                      <div class="icon"><span class="fa fa-home"></span></div>
+                      <input type="text" class="form-control" name="address" placeholder="Street">
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-12">
+                  <div class="form-group">
+                    <label for="city">City</label>
+                    <div class="input-wrap">
+                      <div class="icon"><span class="fa fa-map-marker"></span></div>
+                      <input type="text" class="form-control" name="city" placeholder="City">
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label for="state">State</label>
+                    <div class="input-wrap">
+                      <div class="icon"><span class="fa fa-map-marker"></span></div>
+                      <input type="text" class="form-control" name="state" placeholder="State">
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label for="postal_code">Postal Code</label>
+                    <div class="input-wrap">
+                      <div class="icon"><span class="fa fa-map-marker"></span></div>
+                      <input type="text" class="form-control" name="postal_code" placeholder="Postal Code">
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-12">
+  <div class="form-group">
+    <label for="hours_per_week">How many hours per week can you volunteer?</label>
+    <div class="input-wrap">
+      <div class="icon"><span class="fa fa-clock-o"></span></div>
+      <select class="form-control" name="hours_per_week" required>
+        <option value="" disabled selected>Select hours</option>
+        <option value="1-3">1-3 hours</option>
+        <option value="4-6">4-6 hours</option>
+        <option value="7-10">7-10 hours</option>
+        <option value="11-15">11-15 hours</option>
+        <option value="16+">16+ hours</option>
+      </select>
+    </div>
+  </div>
+</div>
+                <div class="col-md-12">
+  <div class="form-group">
+    <label>Areas of Interest</label>
+    <div class="input-wrap">
+      <div class="icon"><span class="fa fa-heart"></span></div>
+      <div class="ml-4">
+        <label class="checkbox-inline">
+          <input type="checkbox" name="interest[]" value="animal_care"> Animal Care
+        </label><br>
+        <label class="checkbox-inline">
+          <input type="checkbox" name="interest[]" value="shelter_care"> Shelter Care (Cleaning, Maintenance)
+        </label><br>
+        <label class="checkbox-inline">
+          <input type="checkbox" name="interest[]" value="fundraising"> Fundraising
+        </label><br>
+        <label class="checkbox-inline">
+          <input type="checkbox" name="interest[]" value="events"> Events
+        </label><br>
+        <label class="checkbox-inline">
+          <input type="checkbox" name="interest[]" value="education"> Education & Outreach
+        </label><br>
+        <label class="checkbox-inline">
+          <input type="checkbox" name="interest[]" value="transport"> Animal Transport
+        </label><br>
+        <label class="checkbox-inline">
+          <input type="checkbox" name="interest[]" value="admin"> Admin/Office Support
+        </label><br>
+        
+      </div>
+    </div>
+  </div>
+</div>
+<div class="col-md-12">
+                  <div class="form-group">
+                    <div class="input-wrap">
+                      <div class="icon"><span class="fa fa-check"></span></div>
+                      <label class="checkbox-inline">
+                        <input type="checkbox" name="consent" required> Our Team can contact you?
+                      </label>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-12" >
+                  <div class="form-group" >
+                    <button type="submit" class="btn btn-secondary py-3 px-4 w-100" >Submit</button>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</body>
+</html>

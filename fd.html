@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Send Feedback</title>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:200,300,400,500,600,700,800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/animate.css">
+  <link rel="stylesheet" href="css/owl.carousel.min.css">
+  <link rel="stylesheet" href="css/owl.theme.default.min.css">
+  <link rel="stylesheet" href="css/magnific-popup.css">
+  <link rel="stylesheet" href="css/bootstrap-datepicker.css">
+  <link rel="stylesheet" href="css/jquery.timepicker.css">
+  <link rel="stylesheet" href="css/flaticon.css">
+  <link rel="icon" href="images/logo.png" type="image/x-icon">
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    .feedback-form {
+      background: #fff;
+      padding: 40px;
+      border-radius: 10px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.1);
+      margin: 50px auto;
+      max-width: 800px;
+    }
+    .feedback-form h2 {
+      color: #333;
+      margin-bottom: 30px;
+      text-align: center;
+    }
+    .form-group label {
+      font-weight: 600;
+      color: #555;
+    }
+    .btn-submit {
+      background: #4070f4;
+      color: #fff;
+      border: none;
+      padding: 12px 30px;
+      border-radius: 5px;
+      font-size: 18px;
+      transition: background 0.3s;
+    }
+    .btn-submit:hover {
+      background: #265df2;
+    }
+
+    .star-rating {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  font-size: 2em;
+  margin: 10px 0;
+}
+.star-rating input[type="radio"] {
+  display: none;
+}
+.star-rating label {
+  color: #ccc;
+  cursor: pointer;
+  margin: 0 5px;
+  transition: color 0.2s;
+}
+.star-rating label:hover,
+.star-rating label:hover ~ label,
+.star-rating input[type="radio"]:checked ~ label {
+  color: #ffc107;
+}
+
+  </style>
+</head>
+<body>
+  <section class="ftco-section">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-8">
+          <div class="feedback-form">
+            <h2>Send Your Feedback</h2>
+            <form action="fd.php" method="post">
+              <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" class="form-control" name="name" required>
+              </div>
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" class="form-control" name="email" required>
+              </div>
+              <div class="form-group">
+                <label for="subject">Subject</label>
+                <input type="text" class="form-control" name="subject" required>
+              </div>
+              <div class="form-group">
+                <label for="feedback">Feedback</label>
+                <textarea class="form-control" name="feedback" rows="5" required></textarea>
+              </div>
+              <div class="form-group">
+  <label for="rating">Rating</label>
+  <div class="star-rating">
+    <input type="radio" id="star5" name="rating" value="5" required><label for="star5">★</label>
+    <input type="radio" id="star4" name="rating" value="4"><label for="star4">★</label>
+    <input type="radio" id="star3" name="rating" value="3"><label for="star3">★</label>
+    <input type="radio" id="star2" name="rating" value="2"><label for="star2">★</label>
+    <input type="radio" id="star1" name="rating" value="1"><label for="star1">★</label>
+  </div>
+</div>
+
+              <div class="form-group text-center">
+                <button type="submit" class="btn btn-submit">Submit Feedback</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</body>
+</html>
